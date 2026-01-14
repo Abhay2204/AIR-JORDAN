@@ -119,7 +119,7 @@ const App: React.FC = () => {
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity, cartCount }}>
       <ProductModalContext.Provider value={{ openProductModal }}>
-        <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-[#ff0000] selection:text-white">
+        <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-[#ff0000] selection:text-white overflow-x-hidden max-w-full">
           <Navbar isLoading={loading} onOpenCart={() => setIsCartOpen(true)} cartCount={cartCount} />
           
           <CartDrawer 

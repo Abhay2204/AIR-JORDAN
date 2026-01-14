@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
                 relative z-10 w-full md:w-[140%] max-w-xs md:max-w-none h-auto object-contain
                 drop-shadow-[0_30px_60px_rgba(255,0,0,0.3)]
                 transition-all duration-1000 ease-out
-                ${animationStage === 0 ? '-translate-x-[100vw] rotate-0 opacity-0' : ''}
+                ${animationStage === 0 ? '-translate-x-full rotate-0 opacity-0' : ''}
                 ${animationStage >= 1 ? 'translate-x-0 -rotate-[25deg] opacity-100' : ''}
               `}
               style={{ transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
