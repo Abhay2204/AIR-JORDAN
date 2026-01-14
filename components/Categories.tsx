@@ -1,10 +1,12 @@
 import React from 'react';
 import { Reveal } from './Reveal';
 import { ArrowRight } from 'lucide-react';
+import menImage from '../images/2.png';
+import womenImage from '../images/4.png';
 
 const CATEGORIES = [
-  { id: 1, name: "MEN", subtitle: "Performance & Style", image: "/images/2.png", products: "240+ Products" },
-  { id: 2, name: "WOMEN", subtitle: "Bold & Fearless", image: "/images/4.png", products: "180+ Products" },
+  { id: 1, name: "MEN", subtitle: "Performance & Style", image: menImage, products: "240+ Products" },
+  { id: 2, name: "WOMEN", subtitle: "Bold & Fearless", image: womenImage, products: "180+ Products" },
   { id: 3, name: "KIDS", subtitle: "Future Legends", image: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1000&auto=format&fit=crop", products: "120+ Products" }
 ];
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Reveal } from './Reveal';
+import aboutImage1 from '../images/1.png';
+import aboutImage2 from '../images/2.png';
+import aboutImage3 from '../images/3.png';
+import aboutImage4 from '../images/4.png';
 
 const About = () => {
   return (
@@ -19,14 +23,14 @@ const About = () => {
                     <div className="space-y-3 md:space-y-6 mt-6 md:mt-12 relative z-10">
                         <Reveal variant="slide-right" delay={0.1} duration={1.2}>
                             <img 
-                                src="/images/1.png" 
+                                src={aboutImage1} 
                                 alt="Basketball hoop" 
                                 className="rounded-xl md:rounded-2xl w-full h-40 sm:h-52 md:h-64 object-cover hover:scale-105 transition-transform duration-700 shadow-2xl"
                             />
                         </Reveal>
                         <Reveal variant="blur-in" delay={0.3} duration={1.2}>
                             <img 
-                                src="/images/2.png" 
+                                src={aboutImage2} 
                                 alt="Abstract court" 
                                 className="rounded-xl md:rounded-2xl w-full h-32 sm:h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-700 shadow-2xl"
                             />
@@ -35,14 +39,14 @@ const About = () => {
                     <div className="space-y-3 md:space-y-6 relative z-10">
                         <Reveal variant="slide-left" delay={0.2} duration={1.2}>
                             <img 
-                                src="/images/3.png" 
+                                src={aboutImage3} 
                                 alt="Sneaker detail" 
                                 className="rounded-xl md:rounded-2xl w-full h-32 sm:h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-700 shadow-2xl"
                             />
                         </Reveal>
                         <Reveal variant="zoom-in" delay={0.4} duration={1.2}>
                             <img 
-                                src="/images/4.png" 
+                                src={aboutImage4} 
                                 alt="Game action" 
                                 className="rounded-xl md:rounded-2xl w-full h-40 sm:h-52 md:h-64 object-cover hover:scale-105 transition-transform duration-700 shadow-2xl"
                             />

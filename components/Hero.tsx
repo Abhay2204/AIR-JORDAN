@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, ShoppingBag, Star } from 'lucide-react';
+import heroShoeImage from '../images/heroshoe.png';
 
 const Hero: React.FC = () => {
   const [animationStage, setAnimationStage] = useState(0);
@@ -17,7 +18,7 @@ const Hero: React.FC = () => {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  const baseImage = "/images/heroshoe.png";
+  const baseImage = heroShoeImage;
 
   return (
     <section className="relative w-full min-h-screen md:h-screen md:min-h-[800px] bg-[#0a0a0a] overflow-hidden flex items-center pt-20 pb-8 md:pt-0 md:pb-0">

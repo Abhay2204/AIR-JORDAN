@@ -1,5 +1,6 @@
 import React from 'react';
 import { Reveal } from './Reveal';
+import shoeVideo from '../images/shoevideo.mp4';
 
 const Innovation = () => {
   return (
@@ -13,7 +14,7 @@ const Innovation = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/images/shoevideo.mp4" type="video/mp4" />
+          <source src={shoeVideo} type="video/mp4" />
         </video>
         
         {/* Video Overlay */}
