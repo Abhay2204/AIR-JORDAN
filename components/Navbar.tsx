@@ -66,9 +66,19 @@ const Navbar: React.FC<NavbarProps> = ({ isLoading, onOpenCart, cartCount = 0 })
 
         {/* Actions */}
         <div className="flex items-center gap-3 md:gap-6 text-white">
-          <button className="hover:text-[#ff0000] transition-colors">
+          {/* Mobile Menu Button - Left side */}
+          <button 
+            className="md:hidden hover:text-[#ff0000] transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+              {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+          
+          {/* Desktop Search */}
+          <button className="hidden md:block hover:text-[#ff0000] transition-colors">
               <Search size={18} className="md:w-5 md:h-5" strokeWidth={2} />
           </button>
+          
           <button 
               onClick={onOpenCart}
               className="hover:text-[#ff0000] transition-colors relative"
@@ -82,12 +92,6 @@ const Navbar: React.FC<NavbarProps> = ({ isLoading, onOpenCart, cartCount = 0 })
           </button>
           <button className="hover:text-[#ff0000] transition-colors hidden sm:block">
               <User size={18} className="md:w-5 md:h-5" strokeWidth={2} />
-          </button>
-          <button 
-            className="md:hidden hover:text-[#ff0000] transition-colors"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-              {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </nav>
